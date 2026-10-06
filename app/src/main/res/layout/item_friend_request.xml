@@ -5,10 +5,11 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="2dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="#3A3A3A"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -17,51 +18,60 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Name -->
         <TextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Person Name"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black" />
+            android:text="Suparna Pal"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
+        <!-- Mutual Friends & Time -->
         <TextView
             android:id="@+id/tvMutualFriends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="4 mutual friends"
-            android:textSize="14sp"
-            android:textColor="@android:color/darker_gray" />
+            android:text="1 mutual friends . 2y"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp" />
 
+        <!-- Action Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
 
-            <Button
+            <!-- Confirm Button (Purple Pill) -->
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConfirm"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
+                android:backgroundTint="#5A14EB"
                 android:text="Confirm"
                 android:textAllCaps="false"
-                android:backgroundTint="@android:color/holo_blue_dark"
-                android:textColor="@android:color/white" />
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="24dp" />
 
-            <Button
+            <!-- Delete Button (Grey Pill) -->
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnDelete"
-                style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
+                android:backgroundTint="#6E6E6E"
                 android:text="Delete"
                 android:textAllCaps="false"
-                android:textColor="@android:color/darker_gray" />
+                android:textColor="#E0E0E0"
+                android:textSize="14sp"
+                app:cornerRadius="24dp" />
 
         </LinearLayout>
 

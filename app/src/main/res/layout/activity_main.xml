@@ -4,6 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1E1E1E"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,9 +14,9 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="Friend Requests"
+        android:textColor="#FFFFFF"
         android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black" />
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewRequests"
